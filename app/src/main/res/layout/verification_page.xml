@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registerPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="610dp"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="73dp"
+                    android:layout_marginRight="29dp"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/login_img" />
+
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:capitalize="sentences"
+                        android:text="We've sent a verification code to $emailId"
+                        android:textAlignment="center" />
+
+                    <customfonts.EditText_Roboto_Regular
+                        android:id="@+id/editText_Roboto_Regular3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13.3dp"
+                        android:background="#00000000"
+                        android:drawableRight="@drawable/view_password"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Verification Code"
+                        android:inputType="textPassword"
+                        android:paddingRight="20dp"
+                        android:textColor="#9391a4"
+                        android:textSize="25sp"
+
+                        android:textStyle="normal" />
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="18dp"
+                        android:background="@color/view_gray" />
+
+                    <customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="53dp"
+                        android:layout_marginLeft="33dp"
+                        android:layout_marginTop="38dp"
+                        android:layout_marginRight="33dp"
+                        android:background="@drawable/button_gradient"
+                        android:gravity="center"
+                        android:lineSpacingExtra="34sp"
+                        android:paddingTop="10.5dp"
+                        android:paddingBottom="10.5dp"
+                        android:text="Verify"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

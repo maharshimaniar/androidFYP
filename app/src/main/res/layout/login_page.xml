@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1"
+    android:background="@drawable/bg"
+    android:backgroundTint="#00FFFFFF"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="47dp"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="-0.01"
+                android:lineSpacingExtra="20sp"
+                android:text="Sign In"
+                android:textColor="#23203f"
+                android:textSize="25sp"
+                android:textStyle="normal" />
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:letterSpacing="0.0265"
+                android:text="Login to continue your account"
+                android:textColor="#6e6e73"
+                android:textSize="17sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="463dp"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="73dp"
+                android:layout_marginRight="29dp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/login_img" />
+
+                <customfonts.EditText_Roboto_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:background="#00000000"
+                    android:fontFamily="sans-serif"
+                    android:hint="Email"
+                    android:textColor="#23203f"
+                    android:textSize="25sp"
+                    android:textStyle="normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@color/view_gray" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <customfonts.EditText_Roboto_Regular
+                        android:id="@+id/editText_Roboto_Regular4"
+                        android:layout_width="314dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="4dp"
+                        android:background="#00000000"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:paddingRight="20dp"
+                        android:textColor="#9391a4"
+
+                        android:textSize="25sp"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="21dp"
+                        android:layout_height="16dp"
+                        android:background="@drawable/view_password"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/editText_Roboto_Regular4"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@color/view_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp">
+
+                    <Button
+                        android:id="@+id/loginButton"
+                        android:layout_width="202dp"
+                        android:layout_height="39dp"
+                        android:background="@drawable/button_gradient"
+                        android:text="Login"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.375" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:lineSpacingExtra="26sp"
+                        android:text="@string/already_have_an_account"
+                        android:textColor="#9391a4"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        tools:layout_conversion_absoluteHeight="20dp"
+                        tools:layout_conversion_absoluteWidth="199dp"
+                        tools:layout_editor_absoluteX="62dp"
+                        tools:layout_editor_absoluteY="604dp" />
+
+                    <Button
+                        android:id="@+id/registerButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:clickable="true"
+                        android:text="Register"
+                        tools:layout_conversion_absoluteHeight="48dp"
+                        tools:layout_conversion_absoluteWidth="88dp"
+                        tools:layout_editor_absoluteX="261dp"
+                        tools:layout_editor_absoluteY="573dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

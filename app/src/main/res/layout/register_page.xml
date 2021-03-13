@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registerPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="47dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:letterSpacing="-0.01"
+                    android:lineSpacingExtra="20sp"
+                    android:text="Sign Up"
+                    android:textColor="#23203f"
+                    android:textSize="25sp"
+                    android:textStyle="normal" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="73dp"
+                    android:layout_marginRight="29dp"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/login_img" />
+
+                    <customfonts.EditText_Roboto_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="28dp"
+                        android:background="#00000000"
+                        android:fontFamily="sans-serif"
+                        android:hint="Email"
+                        android:textColor="#23203f"
+                        android:textSize="25sp"
+                        android:textStyle="normal" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="18dp"
+                        android:background="@color/view_gray" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <customfonts.EditText_Roboto_Regular
+                        android:id="@+id/editText_Roboto_Regular"
+                        android:layout_width="314dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="4dp"
+                        android:background="#00000000"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:paddingRight="20dp"
+                        android:textColor="#9391a4"
+
+                        android:textSize="25sp"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="21dp"
+                        android:layout_height="16dp"
+                        android:background="@drawable/view_password"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/editText_Roboto_Regular"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="18dp"
+                        android:background="@color/view_gray" />
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <customfonts.EditText_Roboto_Regular
+                            android:id="@+id/editText_Roboto_Regular4"
+                            android:layout_width="314dp"
+                            android:layout_height="32dp"
+                            android:layout_marginStart="4dp"
+                            android:background="#00000000"
+                            android:fontFamily="sans-serif-light"
+                            android:hint="Confirm Password"
+                            android:inputType="textPassword"
+                            android:paddingRight="20dp"
+                            android:textColor="#9391a4"
+
+                            android:textSize="25sp"
+                            android:textStyle="normal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="21dp"
+                            android:layout_height="16dp"
+                            android:background="@drawable/view_password"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/editText_Roboto_Regular4"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="18dp"
+                        android:background="@color/view_gray" />
+
+                    <customfonts.MyTextView_Roboto_Regular
+                        android:id="@+id/registerButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="53dp"
+                        android:layout_marginLeft="33dp"
+                        android:layout_marginTop="38dp"
+                        android:layout_marginRight="33dp"
+                        android:background="@drawable/button_gradient"
+                        android:gravity="center"
+                        android:lineSpacingExtra="34sp"
+                        android:paddingTop="10.5dp"
+                        android:paddingBottom="10.5dp"
+                        android:text="Register"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
